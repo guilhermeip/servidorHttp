@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>Teste Dyn</title>
+</head>
+<body>
+<h1>Teste Dyn</h1>
+<% getParam();
+   date("dd M yyyy");
+   getHeaderField("Accept")%>
+
+<% date("dd/MM/yyyy"); %>
+</body>
+
+</html>

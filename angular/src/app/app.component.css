@@ -1,0 +1,34 @@
+#imagem_angular {
+  animation: rotation 10s linear infinite;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+.centralizar {
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+h2, p, h1{
+  font-family: 'Montserrat', sans-serif;
+  overflow: hidden;
+  color: white;
+  
+}
+
+
+.estiloUL {
+  border: 2px solid red;
+  border-radius: 12px;
+  background-color: #D32F2F;
+  max-width: 100%;
+}

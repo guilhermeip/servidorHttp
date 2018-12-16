@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+
+    <title>Servidor Http</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body onload="enviarRequisicaoHttp()">
+    <h1 class="center-align"> Conteúdo do diretório <b><span id="titulo"></span></b></h1>
+    <h4 class="center-align"> Visualizando <span id="items"></span> item(s)</h2>
+    <table id="myTable" class="centered highlight responsive-table">
+        <thead>
+            <tr>
+                <th>
+                    <a onclick="sortName()" class="waves-effect waves-light btn-small">
+                        <i class="material-icons">
+                            sort_by_alpha
+                        </i>
+                    </a>
+                    Nome
+                </th>
+                <th>
+                    <a onclick="sortTam()" class="waves-effect waves-light btn-small">
+                        <i class="material-icons">
+                            sort
+                        </i>
+                    </a>
+                    Tamanho
+                </th>
+                <th>Última Modificação</th>
+                <th>Executável</th>
+                <th>Download</th>
+            </tr>
+        </thead>
+        <tbody id="tabelaBody"></tbody>
+    </table>
+    <script src="/www/js/index.js"></script>
+    <script src="/www/js/sort.js"></script>
+    
+</body>
+</html>
